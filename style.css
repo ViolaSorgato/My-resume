@@ -1,0 +1,225 @@
+/*Generell styling här*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(248, 245, 231, 0.966);
+    background-color: rgb(41, 33, 33);
+    width:100%;
+    height:calc(100vh - 3rem);
+    overflow: scroll;
+    text-align: justify;
+}
+header {
+    height: 3rem;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    direction: row;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    gap: 2rem;
+    padding-right: 5rem;
+    font-size: larger;
+}
+
+main {
+    background-image:url(/assets/workspace-1280538_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+/*Styiling för top_part här*/
+
+.top_part {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 20rem;
+}
+
+h1 {
+font: size 50px;
+}
+
+#presentation {
+    width: 50rem;
+    height: 20rem;
+    margin-left: 5rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+button {
+  background-color: white;
+  border: none;
+  color: rgb(41, 33, 33);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 40px;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.333), 0 17px 50px 0 rgba(0, 0, 0, 0.288);
+}
+
+/*Styling för middle_ part här*/
+
+.middle_part {
+    background-color: rgb(41, 33, 33);
+    height: fit-content;
+    width: 60%;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+
+img {
+    border-radius: 50%;
+    width: 10rem;
+    margin-left: 5rem;
+}
+
+#aboutme {
+    font-size: larger;
+    width: 35rem;
+}
+
+/*Styling för bottom_part här*/
+
+.bottom_part {
+    width: 100%;
+    height: fit-content;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#experience {
+    width: 40%;
+    height: 30rem;
+    font-size: larger;
+    margin-left: 5rem;
+}
+
+.jobs {
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: larger;
+}
+
+
+#skills {
+    width: 40%;
+    height: 30rem;
+}
+
+.container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 20px;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color:rgb(41, 33, 33);
+    border-radius: 20px;
+}
+  
+  .html {width: 90%;}
+  .css {width: 80%;}
+  .js {width: 65%;}
+  .php {width: 60%;}
+
+/*Styling för footer här*/
+  footer {
+    width: 100%;
+    height: 2rem;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, 0.039);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+
+.icons i {
+    font-size: larger;
+}
+
+a {
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    /*Styling för enheter med bredd på max 900px här*/
+    /*De 2 stora ändringar är att allt är centrerad och i column*/
+
+    header {
+        background-color:rgb(41, 33, 33); /*Det blir mer synlig*/
+        justify-content: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .top_part {
+        padding-top: 5rem;
+        width: 90%;
+        text-align: center;
+    }
+
+    .middle_part {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 5rem;
+    }
+
+    img {
+        margin-left:0;
+    }
+
+    #aboutme {
+        width: 90%;
+    }
+
+    .bottom_part {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5rem;
+    }
+
+    #experience {
+        width: 90%;
+        margin-right: 5rem;
+    }
+
+    #skills {
+        width: 90%;
+    }
+}

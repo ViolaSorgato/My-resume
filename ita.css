@@ -1,0 +1,126 @@
+body {
+    background-image: url(/assets/view.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 30rem;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5rem;
+}
+
+/*Gemensam styling för alla runda div:ar*/
+.circle {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Individuell styling här, t.ex. färg*/
+.one {
+    background-color: rgb(1, 104, 1);
+    color: white;
+}
+
+.two {
+    background-color: whitesmoke;
+}
+
+.three {
+    background-color: rgb(236, 4, 4);
+    color: white;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*Styling för resten här, button och footer*/
+
+button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 40px;
+  }
+  
+  button:hover {
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.333), 0 17px 50px 0 rgba(0, 0, 0, 0.288);
+  }
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 2rem;
+    bottom: 0;
+    margin-left: 0;
+    background-color:rgba(0, 0, 0, 0.635);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+
+.icons i {
+    font-size: larger;
+}
+
+a {
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    /*Styling för enheter med bredd på max 900px här*/
+
+header {
+    color: white;
+}
+main {
+    flex-direction: column;
+}
+.container {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+}
+
+.button {
+    margin-top: 5rem;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5726e16a0b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <ul class="menu">
+            <a href="#aboutme"><li>About</li></a>
+            <a href="#experience"><li>Experience</li></a>
+            <a href="#skills"><li>Skills</li></a>
+            <a href="#footer"><li>Contact</li></a>
+        </ul>
+    </header>
+
+    <!--Min main är delad inom 3 stora delar: top_part, middle_part, bottom_part-->
+    <main>
+        <div class="top_part">
+            <section id="presentation">
+                <h1> Hi! I'm Viola Sorgato -</h1>
+                <h3> Webdeveloper, teacher, artist.</h3> <br>  <!--Fake it till you make it I guess-->
+                <p> Newly graduated Webdeveloper specialized in e-commerce. <br>
+                    10 years of experience teaching Italian to students 
+                    from all over the world.
+                </p>
+                <a href="mailto:violasorgato@gmail.com"><button>Get in touch</button></a>
+            </section>
+        </div>
+    
+     <!--Här har jag lagt en bild och en kort text-->
+
+        <div class="middle_part">
+            <img src="/assets/profilbild.jpg" alt="Min profil bild">
+            <div id="aboutme">
+                <h2>About me:</h2>
+                <p>I'm Viola and I'm thirty years old from Venice, Italy.
+                    I came to Sweden with the intent of staying two years for a Master programme,
+                    and here I am, seven years later, in love with this Scandinavian gem!
+                    Besides Italian, English and Swedish, I also speak French, German
+                    and a bit of Swahili.
+                    My goal is to work as a webdeveloper, preferable in an international environment
+                    surrounded by challenges & continuous learning.
+                </p>
+            </div>
+        </div>
+    
+    <!--I bottom_part finns två div:ar bredvid varandra, experience och skills-->
+
+        <div class="bottom_part">
+            <div id="experience">
+                <h2>Experience</h2>
+                <ul class="jobs">
+                    <li>2018 - present. Italian teacher at Folkuniversitet, Göteborg.</li>
+                    <li>2022. Shop assistant at Lifebutiken, Alingsås.</li>
+                    <li>2018 - 2022. Shop assistant at Twilfit, Göteborg.</li>
+                    <li>2012-2015. Teacher and translator at Scuola Mulino, Padova (Italy).</li>
+                </ul>
+                    <a href="ita.html" target="_blank"><button>Curious about my Italian courses?</button></a>
+            </div>
+
+        <!--Den följande delen är självklart inte sant... men nån dag kanske!-->
+            <div id="skills">
+                <h2> Skills</h2>
+                <p>HTML</p>
+                <div class="container">
+                    <div class="skills html">90%</div>
+                </div>
+
+                <p>CSS</p>
+                <div class="container">
+                    <div class="skills css">80%</div>
+                </div>
+
+                <p>JavaScript</p>
+                <div class="container">
+                    <div class="skills js">65%</div>
+                </div>
+
+                <p>PHP</p>
+                <div class="container">
+                    <div class="skills php">60%</div>
+                </div>
+            </div>
+        </div>
+    
+    </main>
+    <footer id="footer">
+        <div class="icons">
+            <a href="https://twitter.com/violasorgato" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com/viola.sorgato" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/egles-viola-sorgato-54a73215a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/eglesvs/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
