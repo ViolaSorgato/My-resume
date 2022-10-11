@@ -30,7 +30,7 @@ header {
 }
 
 main {
-    background-image: url(https://github.com/ViolaSorgato/My-resume.git/assets./workspace-1280538_1920.jpg);
+    background-image: url('https://github.com/ViolaSorgato/My-resume.git./assets./workspace-1280538_1920.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
